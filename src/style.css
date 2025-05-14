@@ -1,0 +1,46 @@
+/* Reset and layout for full-screen sidebar + map */
+
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  background-color: #1e1e2f;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Disable default centering from Vite template */
+body {
+  display: block;
+}
+
+/* Remove padding from #app and let Vue handle layout */
+#app {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Optional: style for links and buttons in sidebar */
+a {
+  color: #7aa0ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #aecbff;
+}
+
+button {
+  background: #2a2a3d;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background: #3a3a5a;
+}
+
